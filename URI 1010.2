@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+	int code,n_1,n_2;
+	float v_1,v_2,final_price;
+	scanf("%d %d %f",&code, &n_1, &v_1);
+	scanf("%d %d %f",&code, &n_2, &v_2);
+	final_price = (n_1 * v_1) + (n_2 * v_2);
+	printf("VALOR A PAGAR: R$ %.2f\n",final_price);
+	return 0;
+
+}
