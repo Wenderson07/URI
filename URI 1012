@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+	float a,b,c;
+	double triangle,circle,trapezium,square,rectangle;
+	
+	scanf("%f %f %f",&a, &b,&c);
+	
+	triangle= a * c/2;
+	circle =  3.14159 * c * c;
+	trapezium =	c * (a +b) /2;
+	square = b *b;
+	rectangle = a * b;
+	
+	printf("TRIANGULO: %.3f\nCIRCULO: %.3f\nTRAPEZIO: %.3f\nQUADRADO: %.3f\nRETANGULO: %.3f\n",triangle,circle,trapezium,square,rectangle);
+	return 	0;
+}
