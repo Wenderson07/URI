@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main (){
+	int distance;
+	float fuel,comsuption;
+	scanf("%d %f",&distance, &fuel);
+	comsuption = distance / fuel ;
+	printf("%.3f km/l\n",comsuption);
+	return 0;
+}
