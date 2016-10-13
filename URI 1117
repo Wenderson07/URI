@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+	int x;
+	float notas,media;
+	for(x=0;x!=2;x++){
+	scanf("%f",&notas);	 
+	while(notas < 0 || notas > 10){
+	printf("nota invalida\n");
+	scanf("%f",&notas);}
+	media =media + notas;
+	}
+	printf("media = %.2f\n",media /2);	
+	return 0;
+}
