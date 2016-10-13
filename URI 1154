@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+	int total,media,count;
+	float idade;;
+	idade =0,count = -1,total = 0;
+	while (idade >=0){
+		count+=1;
+		total +=idade;
+		scanf("%f",&idade);
+		
+		printf("t = %d e c = %d\n",total,count);
+	}
+	printf("%.2f\n",float(total / count));	
+	return 0;
+}
