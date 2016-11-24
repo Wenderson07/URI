@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+	int i,x,total,numero;
+	char cobaias,coelho,sapo,rato;
+	scanf("%d",&x);
+	for(i=0;i<x;i++){
+		scanf("%d %s",&numero,&cobaias)
+		
+		
+		
+	}
+	
+}
