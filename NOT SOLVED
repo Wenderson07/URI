@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+	int i,vezes,inicio,impares,soma,y,count,aux;
+	scanf("%d",&vezes);
+	for(i =0;i<vezes;i++){
+			count = 0;
+			soma=0;
+			scanf("%d",&inicio);
+			scanf("%d",&y);
+			if ( inicio < y){
+				aux = y;
+				y = inicio;
+				inicio = aux;
+			}
+			impares = inicio;
+			while(count != y){
+			if(impares % 2 != 0){
+			soma += impares;
+			count++;}
+			impares++;
+			}
+		printf("%d\n",soma);
+		}
+	}
+
