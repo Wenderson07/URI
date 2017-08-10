@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+	int x,count =1;
+	scanf("%d",&x);
+	while(count != x){
+		if(x % count == 0){
+			printf("%d\n",count);
+		}
+	count++;	
+	}
+	if(x % count == 0)
+	printf("%d\n",count);	
+	return 0;
+}
