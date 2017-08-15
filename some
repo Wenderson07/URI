@@ -1,0 +1,26 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+   int startHour,startMinute,endHour,endMinute,gameHour,gameMinute,totalHour,totalMinute;
+   scanf("%d%d%d%d",&startHour,&startMinute,&endHour,&endMinute);
+   totalHour = endHour - startHour; 
+   if(totalHour <= 0){
+	   totalHour = 24 + (endHour - startHour);
+   }
+   
+   gameMinute = endMinute - startMinute;
+   if(totalMinute <= 0){
+	   totalMinute = 60 + (endMinute - startMinute);
+	   totalHour--;
+	   
+   }
+   if(startHour == endHour || startMinute == endMinute){
+       printf("O JOGO DUROU %d HORA(S) E 0 MINUTO(S)\n",totalHour);
+   }       
+   else{
+       printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",totalHour,totalMinute);
+   }
+ 
+    return 0;
+}
