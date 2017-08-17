@@ -21,9 +21,14 @@ int main(){
 			if(validar < 1 || validar > 2){
 				while(control == -597){
 					printf("novo calculo (1-sim 2-nao)\n");
-					scanf("%d",&controle);
-					if(controle == 1){
+					scanf("%d",&control);
+					if(control == 1){
 						validar = 1;
+						control = -597;
+					}
+					if(control == 2){
+						validar ==2;
+						control = -597;
 					}
 				}
 			}
