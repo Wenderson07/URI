@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+	int x;
+	float notas,media=0;
+	int control = -597,validar=1;
+	while(validar == 1)
+	{
+		for(x=0;x!=2;x++)
+		{
+			scanf("%f",&notas);	 
+			while(notas < 0 || notas > 10)
+			{
+				printf("nota invalida\n");
+				scanf("%f",&notas);
+			}
+			media += notas;
+		}
+			printf("media = %.2f\n",(media /2));
+			printf("novo calculo (1-sim 2-nao)\n");
+			scanf("%d",&validar);
+			if(validar < 1 || validar > 2){
+				while(control == -597){
+					printf("novo calculo (1-sim 2-nao)\n");
+					scanf("%d",&controle);
+					if(controle == 1){
+						validar = 1;
+					}
+				}
+			}
+		}
+		
+		
+	return 0;
+}
