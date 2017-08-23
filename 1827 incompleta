@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+	 int tamanho,i,j,x=10;
+	 scanf("%d",tamanho);
+	 int matriz[tamanho][tamanho];
+	  for(i = 1;i <=tamanho;i++){
+		 for(j=1;j<= tamanho;j++){
+		 	if(i == j){
+				 matriz[i][j] = 2;
+			 }
+		 else if(i + j = tamanho){
+			 	 matriz[i][j] == 3;
+		 }
+		 else{
+			 matriz[i][j] == 0;
+		 }		 
+		 }
+		 }
+		 matriz[]
+		
+}
