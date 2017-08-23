@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+	 int tamanho,i,j;
+	 scanf("%d",&tamanho);
+	 while(tamanho != 0){
+	 	int matriz[tamanho][tamanho];
+	  for(i = 1;i <=tamanho;i++){
+		 for(j=1;j<= tamanho;j++){
+		 if(i == j){
+				 matriz[i][j] = 7;
+			 }
+		 else if(i + j == tamanho){
+			 	 matriz[i][j] == 8;
+		 }
+		 else{
+			 matriz[i][j] == 9;
+		 }
+		 printf("%d ",matriz[i][j]);		 
+		 }
+		 printf("\n");
+		 }
+		 
+		 scanf("%d",&tamanho);
+	 }		
+}
